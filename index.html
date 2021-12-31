@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="içerik açıklaması">
+    <title>PaiPurth</title>
+    <link rel="icon" href="img/favico.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+            .slider img{
+                object-fit: cover;
+                object-position: top center;
+            }
+            .slider .owl-stage-outer, .slider .owl-stage, .slider .owl-item{
+                height: 100%;
+                width: 100%;
+            }
+            .slider .container img{
+                bottom: 50px;
+            }
+
+            .hero-wrap{
+                    height: 650px;
+            }
+            .owl-stage-outer, .owl-stage, .owl-item{
+                height: 100%;
+            }
+
+
+            @media (max-width:767.98px) {
+                #dots-hero {
+                    bottom: 15px;
+                    transform: translateX(-50%);
+                }
+
+                h2{
+                    font-size: 22px;
+                }
+            }
+            @media (max-width:991.98px){
+                .hero .container{
+                    padding-top: 85px;
+                }
+            }
+        
+            @media (min-width:1200px) {
+
+                .hero-wrap{
+                    height: 100vh;
+                }
+
+            }
+    
+
+    </style>
+
+</head>
+<body id="home" class="text-center text-md-start">
+
+    <nav class="navbar fixed-top navbar-expand-xl">
+        <div class="container align-items-center justify-content-between">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo-1.png" alt="" width="230" height="auto" class="d-none d-xl-inline-block pt-2">
+                <img src="img/logo-1.png" alt="" width="150" height="46" class="d-xl-none">
+            </a>
+
+            <i class="bi bi-justify d-xl-none fs-4 mobile-open" style="color: #e0ba77;"></i>
+
+            <div class="ms-auto d-none d-xl-block">
+                
+                <ul class="navbar-nav d-flex justify-content-center align-items-center text-white">
+                    <li class="nav-item ms-4">
+                        <a href="index.html">Anasayfa</a>
+                    </li>
+
+                    <li class="nav-item ms-4">
+                        <a href="about.html">Kurumsal</a>
+                    </li>
+
+                    <li class="nav-item ms-4">
+                        <a href="all-project.html">Projeler</a>
+                    </li>
+
+                    <li class="nav-item ms-4 ">
+                        <a href="contact.html">İletişim</a>
+                    </li>
+
+                    
+                    <li class="ms-4 contactbtn-nav">
+                        <a href="#" class="btn px-3 fw-600 " data-bs-toggle="modal" data-bs-target="#exampleModal">Bize Ulaş</a>
+                    </li>
+
+                </ul>
+    
+            </div>
+            
+           
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <div class="text-white fs-1 position-absolute end-0 top-0 pe-5 pt-4 pointer mobile-close" style="z-index: 99999;"> x</div>
+        <ul class="w-100">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Kurumsal</a></li>
+            <li><a href="all-project.html">Projeler</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </div>
+
+
+
+    <section class="hero wow fadeIn">
+        <div class="hero-wrap position-relative">
+    
+            <div id="dots-arrow" class="d-none d-lg-block">
+                <span class="position-absolute pointer top-50 start-0 beft translate-middle-y" style="z-index: 9999;">
+                    <img src="img/s2.png" alt="" width="60" height="60" class="ms-3">
+                </span>
+                <span class="position-absolute pointer top-50 end-0 bight translate-middle-y" style="z-index: 9999;">
+                    <img src="img/s1.png" alt="" width="60" height="60" class="me-3">
+                </span>
+            </div>
+
+    
+            <div class="h-100 slider">
+                <div class="owl-carousel h-100 carousel-fade">
+    
+                    <!-- Slider-1 -->
+                    <div class="item h-100 position-relative">
+                        <img src="img/ust1.jpg" alt="" width="auto" height="100" class="w-100 position-absolute top-0 start-0" style="height: 100vh; filter: brightness(60%);">
+                        <div class="container h-100">
+                            <div class="row align-items-lg-center justify-content-between position-relative h-100">
+                                <div class="col-xxl-5 col-lg-6 text-center text-lg-start">
+                                    <div class="text-white pt-md-3 d-flex flex-wrap flex-column justify-content-center">
+                                        <p class="fs-6 text-uppercase text-yellow-50 fw-bolder">KOCAELİ</p>
+                                           
+                                         
+                                        <h2 class="text-uppercase lh-1 mb-4 fw-bold display-5">Huzurun Yeni Adresini İnceleyin</strong></h2>
+                                      
+                                        <p class="text-white fs-09 col-lg-10 lh-5">Tamamı eşsiz deniz manzarasına sahip olan, fonksiyonelliğin ve kalitenin ön planda tutulduğu üstün mimari tasarım anlayışı ile dizayn edilen Paipurth Suites projesinde, 
+                                            Ekstra deprem dayanıklılığı için statik açıdan da fark yaratan, güvenilir, sağlam inşaat teknik uygulamaları kullanılmıştır. </p>
+                                        
+                                        <div class="d-inline-block pb-lg-5 pt-5 pt-lg-0">
+                                            <a href="all-project.html" class="btn-main text-center pt-1">Projeyi İncele</a>
+                                        </div>
+<!-- 
+                                        <div class="fs-5 col-lg-5 text-white pt-4 pt-lg-0">
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-twitter ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-instagram ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-whatsapp ms-2"></i></a>
+                                        </div> -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xxl-4 col-lg-5 d-lg-block d-none me-5 me-xl-0">
+                                    <form class="main_form col-10 offset-2">
+                                        <h3 class="ms-2 pb-3">Sizi Arayalım</h3>
+                                        <div class="row">
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Adınız Soyadınız" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Mail Adresiniz" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Telefon" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <textarea class="textarea" placeholder="Mesaj" type="text"></textarea>
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <a href="#" class="btn send">Gönder</a>
+                                           </div>
+
+                                        </div>
+                                     </form>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Slider-1 -->
+
+                    <!-- Slider 2 -->
+                    <div class="item h-100 position-relative">
+                        <img src="img/ust2.jpg" alt="" width="auto" height="100" class="w-100 position-absolute top-0 start-0" style="height: 100vh; filter: brightness(60%);">
+                        <div class="container h-100">
+                            <div class="row align-items-lg-center justify-content-between position-relative h-100">
+                                <div class="col-xxl-5 col-lg-6 text-center text-lg-start">
+                                    <div class="text-white pt-md-3 d-flex flex-wrap flex-column justify-content-center">
+                                        <p class="fs-6 text-uppercase text-yellow-50 fw-bolder">KOCAELİ</p>
+                                           
+                                         
+                                        <h2 class="text-uppercase lh-1 mb-4 fw-bold display-5">Huzurun Yeni Adresini İnceleyin</strong></h2>
+                                      
+                                        <p class="text-white fs-09 col-lg-10 lh-5">Tamamı eşsiz deniz manzarasına sahip olan, fonksiyonelliğin ve kalitenin ön planda tutulduğu üstün mimari tasarım anlayışı ile dizayn edilen Paipurth Suites projesinde, 
+                                            Ekstra deprem dayanıklılığı için statik açıdan da fark yaratan, güvenilir, sağlam inşaat teknik uygulamaları kullanılmıştır. </p>
+                                        
+                                        <div class="d-inline-block pb-lg-5 pt-5 pt-lg-0">
+                                            <a href="all-project.html" class="btn-main text-center pt-1">Projeyi İncele</a>
+                                        </div>
+
+                                        <!-- <div class="fs-5 col-lg-5 text-white pt-4 pt-lg-0">
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-twitter ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-instagram ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-whatsapp ms-2"></i></a>
+                                        </div> -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xxl-4 col-lg-5 d-lg-block d-none me-5 me-xl-0">
+                                    <form class="main_form col-10 offset-2">
+                                        <h3 class="ms-2 pb-3">Sizi Arayalım</h3>
+                                        <div class="row">
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Adınız Soyadınız" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Mail Adresiniz" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Telefon" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <textarea class="textarea" placeholder="Mesaj" type="text"></textarea>
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <a href="#" class="btn send">Gönder</a>
+                                           </div>
+
+                                        </div>
+                                     </form>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Slider-2 -->
+
+                    <!-- Slider-3 -->
+
+                    <div class="item h-100 position-relative">
+                        <img src="img/ust3.jpg" alt="" width="auto" height="100" class="w-100 position-absolute top-0 start-0" style="height: 100vh; filter: brightness(70%);">                        
+                        <div class="container h-100">
+                            <div class="row align-items-lg-center justify-content-between position-relative h-100">
+                                <div class="col-xxl-5 col-lg-6 text-center text-lg-start">
+                                    <div class="text-white pt-md-3 d-flex flex-wrap flex-column justify-content-center">
+                                        <p class="fs-6 text-uppercase text-yellow-50 fw-bolder">KOCAELİ</p>
+                                           
+                                         
+                                        <h2 class="text-uppercase lh-1 mb-4 fw-bold display-5">Huzurun Yeni Adresini İnceleyin</strong></h2>
+                                      
+                                        <p class="text-white fs-09 col-lg-10 lh-5">Tamamı eşsiz deniz manzarasına sahip olan, fonksiyonelliğin ve kalitenin ön planda tutulduğu üstün mimari tasarım anlayışı ile dizayn edilen Paipurth Suites projesinde, 
+                                            Ekstra deprem dayanıklılığı için statik açıdan da fark yaratan, güvenilir, sağlam inşaat teknik uygulamaları kullanılmıştır. </p>
+                                        
+                                        <div class="d-inline-block pb-lg-5 pt-5 pt-lg-0">
+                                            <a href="all-project.html" class="btn-main text-center pt-1">Projeyi İncele</a>
+                                        </div>
+
+                                        <!-- <div class="fs-5 col-lg-5 text-white pt-4 pt-lg-0">
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-twitter ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-instagram ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-whatsapp ms-2"></i></a>
+                                        </div> -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xxl-4 col-lg-5 d-lg-block d-none me-5 me-xl-0">
+                                    <form class="main_form col-10 offset-2 ">
+                                        <h3 class="ms-2 pb-3">Sizi Arayalım</h3>
+                                        <div class="row">
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Adınız Soyadınız" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Mail Adresiniz" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Telefon" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <textarea class="textarea" placeholder="Mesaj" type="text"></textarea>
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <a href="#" class="btn send">Gönder</a>
+                                           </div>
+
+                                        </div>
+                                     </form>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- End Slider-3 -->
+
+                    <!-- Slider-4 -->
+
+                    <div class="item h-100 position-relative">
+                        <img src="img/ust4.jpg" alt="" width="auto" height="100" class="w-100 position-absolute top-0 start-0" style="height: 100vh; filter: brightness(50%);">                        
+                        <div class="container h-100">
+                            <div class="row align-items-lg-center justify-content-between position-relative h-100">
+                                <div class="col-xxl-5 col-lg-6 text-center text-lg-start">
+                                    <div class="text-white pt-md-3 d-flex flex-wrap flex-column justify-content-center">
+                                        <p class="fs-6 text-uppercase text-yellow-50 fw-bolder">KOCAELİ</p>
+                                           
+                                         
+                                        <h2 class="text-uppercase lh-1 mb-4 fw-bold display-5">Huzurun Yeni Adresini İnceleyin</strong></h2>
+                                      
+                                        <p class="text-white fs-09 col-lg-10 lh-5">Tamamı eşsiz deniz manzarasına sahip olan, fonksiyonelliğin ve kalitenin ön planda tutulduğu üstün mimari tasarım anlayışı ile dizayn edilen Paipurth Suites projesinde, 
+                                            Ekstra deprem dayanıklılığı için statik açıdan da fark yaratan, güvenilir, sağlam inşaat teknik uygulamaları kullanılmıştır. </p>
+                                        
+                                        <div class="d-inline-block pb-lg-5 pt-5 pt-lg-0">
+                                            <a href="all-project.html" class="btn-main text-center pt-1">Projeyi İncele</a>
+                                        </div>
+
+                                        <!-- <div class="fs-5 col-lg-5 text-white pt-4 pt-lg-0">
+                                            <a href="#"><i class="bi bi-facebook"></i></a>
+                                            <a href="#"><i class="bi bi-twitter ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-instagram ms-2"></i></a>
+                                            <a href="#"><i class="bi bi-whatsapp ms-2"></i></a>
+                                        </div> -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xxl-4 col-lg-5 d-lg-block d-none me-5 me-xl-0">
+                                    <form class="main_form col-10 offset-2">
+                                        <h3 class="ms-2 pb-3">Sizi Arayalım</h3>
+                                        <div class="row">
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Adınız Soyadınız" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Mail Adresiniz" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <input class="contactus" placeholder="Telefon" type="text">
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <textarea class="textarea" placeholder="Mesaj" type="text"></textarea>
+                                           </div>
+
+                                           <div class="col-sm-12">
+                                              <a href="#" class="btn send">Gönder</a>
+                                           </div>
+
+                                        </div>
+                                     </form>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- End Slider-4 -->
+           
+    
+                </div>
+            </div>
+    
+    
+        </div>
+    </section>
+    <section>
+        <div class="d-lg-none d-block ">
+            <form class="main_form">
+                <h3 class="ms-2 pb-3">Sizi Arayalım</h3>
+                <div class="row">
+                   <div class="col-sm-12">
+                      <input class="contactus" placeholder="Adınız Soyadınız" type="text">
+                   </div>
+
+                   <div class="col-sm-12">
+                      <input class="contactus" placeholder="Mail Adresiniz" type="text">
+                   </div>
+
+                   <div class="col-sm-12">
+                      <input class="contactus" placeholder="Telefon" type="text">
+                   </div>
+
+                   <div class="col-sm-12">
+                      <textarea class="textarea" placeholder="Mesaj" type="text"></textarea>
+                   </div>
+
+                   <div class="col-sm-12">
+                      <a href="#" class="btn send">Gönder</a>
+                   </div>
+
+                </div>
+             </form>
+        </div>
+    </section>
+
+
+
+    <!-- News -->
+    <section class="carousel-news bg-dark p-5 wow slideInLeft">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-lg-around justify-content-center">
+
+                <div class="div news-tittle pt-2">
+                    <h2 class="text-yellow-50">HABERLER</h2>                    
+                </div>
+
+                <div class="div-news-p">
+                    <p class="text-white slider-paragraph" id="slider-paragraph">Paipurt Kocaeli için harekete geçti!!</p>
+                    <p><span class="text-white-50">Haber Detayı</span></p>
+                </div>
+
+                <div class="div-news-icon d-flex fs-5 text-white pt-3 pt-md-0">
+                    <a href="#" id="chevron-left"><i class="bi bi-chevron-left"></i></a>
+                    <a href="#slider-paragraph" id="chevron-right"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Paipurth Quality -->
+    <section class="section-one pt-4 wow slideInRight">
+        <div class="container pt-lg-5">
+            <div class="row pt-xl-5 justify-content-between align-items-center">
+                <div class="col-lg-5 col-xl-6">
+                    <div class=" d-lg-none mb-4">
+                        <h5 class="text-uppercase fs-5 pt-4 title-mini fw-bold">hakkımızda</h5>
+                        <h3 class="fs-2 fw-bold">Paipurt Kalitesi ile Tanıştınız mı?</h3>
+                    </div>
+                    <img src="img/biz-kimiz.png" alt="biz-kimiz" class="img-fluid mb-4 mb-lg-0">
+                </div>
+                
+                <div class="col-lg-7 col-xl-5 order-1 order-lg-0 text-center text-lg-start">
+                    <div class="d-none d-lg-block">
+                        <h5 class="text-uppercase fs-5 pt-4 title-mini fw-bold">hakkımızda</h5>
+                        <h3 class="fs-2 fw-bold">Paipurt Kalitesi ile Tanıştınız mı?</h3>
+                    </div>
+                  
+                    <p class="fs-6">Yüksek mukavemetli beton köprülerde, yüksek katlı yapılarda tercih edilen C50 sınıfındaki betonu Paipurth olarak Temel beton dayanımı ve su yalıtımı için bütün dairelerimizde kullandık. 
+                    </p>
+                    <p class="fs-6 pb-4">Panjurlu doğramalarla yaşamın her alanında Enerji tasarrufunun bir numaralı aracısı olan doğrama sistemleri kaliteli bir yapı ortaya çıkarttık. Güzel bir estetik, uzun ömürlü yapılar oluşmasıyla birlikte mahremiyet ve güvenliği sizler için buluşturduk.
+                    </p>
+                    
+                    <a href="all-project.html" class="btn dark-btn">Yeni Projeler</a>
+                </div>
+
+            </div>
+            <!-- Numbers with home -->
+               <div class="row pt-5  justify-content-between align-items-center">
+
+                <!-- Text-Col -->
+                   <div class="col-lg-5 col-xl-6 pe-xl-4">
+                        <h3 class="fs-2 text-center text-lg-start fw-bold pb-4 pb-lg-0">Sayılarla Pairpurth</h3>
+                        <p class="fs-6 d-lg-block d-none">
+                                13 Yıl önce başladığımız yolculuk boyunca adımlarımızı hep en iyiye ulşama ilkesiyle attık. Her zaman daha da iyiye ulaşmak için buradayız...
+                        </p>
+                   </div>
+
+                   <!-- Number-Col -->
+                   <div class="col-lg-7 col-xl-6">
+                        <div class="d-flex fw-500 flex-wrap justify-content-around justify-content-xxl-center">
+                                    <div class="q-count">
+                                        <h3 class="letter-n1">7294</h3>
+                                        <p>Yaşam Alanı</p>
+                                    </div>
+
+                                    <!-- <div class="q-count">
+                                        <h3 class="letter-n1  d-inline-block">2387</h3>
+                                        <span class="fs-4">m<sup>2</sup></span>
+                                        <p>Kiralanabilir <br> Ticari Alan</p>
+                                    </div> -->
+
+                                    <div class="q-count">
+                                        <h3 class="letter-n1 d-inline-block">8114</h3>
+                                        <span class="fs-4">m<sup>2</sup></span>
+                                        <p>Proje Alanı</p>
+                                    </div>
+
+                                    <div class="q-count">
+                                        <h3 class="letter-n1 d-inline-block">2743</h3>
+                                        <span class="fs-4">m<sup>2</sup></span>
+                                        <p>Yeşil Alan</p>
+                                    </div>
+                        </div>
+                        <p class="fs-6 d-lg-none d-block pt-2">13 Yıl önce başladığımız yolculuk boyunca adımlarımızı hep en iyiye ulşama ilkesiyle attık. Her zaman daha da iyiye ulaşmak için buradayız...
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- Topics -->
+    <section class="section-three pt-5 pb-5 wow bounceInUp">
+        <div class="container pt-lg-5 pb-lg-5">
+            <div class="row pt-xl-5">
+                <div class="three">
+                    <h1 class="text-center title-content position-relative">
+                        <span class="bg-white px-5">Paipurth Projeler</span>
+                    </h1>
+                    <h5 class="text-center fw-normal fs-6 pb-4">Yapmış olduğumuz projeleri buradan görüntüleyebilirsiniz.
+
+                    </h5>          
+                </div>
+
+                <div class="row d-flex justify-content-evenly align-items-center flex-wrap pt-4 pb-3">
+                        <div class="suit-2 col-lg-3 col-6 suit-p">
+                            <a href="./detail.html"><img src="./img/l1.jpg" alt="" class="img-fluid"></a>
+                            <p class="">Pairpurt Suites Panaromik<br>Deniz Manzaralı 2+1 <br> <span class="fs-08">Kocaeli</span></p>
+                        </div>
+
+                        <div class="suit-2 col-lg-3 col-6 suit-p">
+                            <a href="./detail2.html"><img src="./img/l2.jpg" alt="" class="img-fluid"></a>
+                            <p class="">Pairpurt Suites Panaromik<br>Deniz Manzaralı 2+1 <br> <span class="fs-08">Kocaeli</span></p>
+                        </div>
+
+                        <div class="suit-2 col-lg-3 col-6 suit-p">
+                            <a href="./detail3.html"><img src="./img/l3.jpg" alt="" class="img-fluid"></a>
+                            <p class="">Pairpurt Suites Panaromik<br>Deniz Manzaralı 2+1 <br> <span class="fs-08">Kocaeli</span></p>
+                        </div>
+
+                        <div class="suit-2 col-lg-3 col-6 suit-p">
+                            <a href="./detail4.html"><img src="./img/l4.jpg" alt="" class="img-fluid"></a>
+                            <p class="">Pairpurt Suites Panaromik<br>Deniz Manzaralı 2+1 <br> <span class="fs-08">Kocaeli</span></p>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- villas -->
+    <section class="mt-5 wow fadeIn">
+        <div id="car-villas" class="carousel slide" data-bs-ride="carousel" style="height: 725px;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active h-100" style="background: #131515;">
+                    <img src="img/bg-2.png" class="position-absolute end-0 bottom h-100 zindex-3" alt="">
+                    <div class="container h-100 position-relative zindex-5">
+                        <div class="row h-100 align-items-center">
+                            <div class="pb-5 text-white col-lg-8 col-xxl-6">
+                                <h5 class="mb-3 text-uppercase text-yellow-50 fs-6 pt-5 ">PAİRPURT İLE</h5>
+                                <h2 class="mb-4 fw-600 display-7 text-uppercase">KOCAELİ PANAROMİK VİLLA 2</h2>
+                                <!-- <p class="text-white-50"><i>KOCAELİ / KARAMÜRSEL</i></p> -->
+                                <!-- <p class="mb-5 lh-lg">Tamamı eşsiz deniz manzarasına sahip olan, fonksiyonelliğin ve kalitenin ön planda tutulduğu üstün mimari tasarım anlayışı ile dizayn 
+                                    edilen Paipurth Suites projesinde, Ekstra deprem dayanıklılığı için statik açıdan da fark yaratan, güvenilir, 
+                                    sağlam inşaat teknik uygulamaları kullanılmıştır.
+                                </p> -->
+                                <ul class="list-unstyled fs-6 text-white-50">
+                                    <li>Genel elektrik kontrolü, uzaktan erişim</li>
+                                    <li>Su vana kontrolü , su kaçak sensörü</li>
+                                    <li>Gaz vana kontrolü , gaz kaçak sensörü</li>                                    
+                                    <li>Hareket sensörü ,hırsız alarm</li>
+                                </ul>
+                                <div class="d-flex fw-500 flex-wrap mb-md-5 justify-content-around justify-content-xl-start">
+                                    <div class="villas-count">
+                                        <h3 class="letter-n1 counter d-inline-block" data-target="942"></h3>
+                                        <span class="fs-4">m<sup>2</sup></span>
+                                        <p class="text-white-50">Yaşam Alanı</p>
+                                    </div>
+
+                                    <!-- <div class="villas-count">
+                                        <h3 class="letter-n1 counter d-inline-block" data-target="310"></h3>
+                                        <span class="fs-4">m<sup>2</sup></span>
+                                        <p class="text-white-50">Kiralanabilir <br> Ticari Alan</p>
+                                    </div> -->
+
+                                    <div class="villas-count">
+                                        <h3 class="letter-n1 counter d-inline-block" data-target="513"></h3>
+                                        <span class="fs-4">m<sup>2</sup></span>
+                                        <p class="text-white-50">Proje Alanı</p>
+                                    </div>
+
+                                    <div class="villas-count">
+                                        <h3 class="letter-n1 counter d-inline-block" data-target="429"></h3>
+                                        <span class="fs-4">m<sup>2</sup></span>
+                                        <p class="text-white-50">Yeşil Alan</p>
+                                    </div>
+                                </div>
+
+                                <a href="all-project.html" class="btn-main text-white mb-5 pt-1">
+                                    Projeyi İncele
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Paipurth Differences -->
+    <section class="section-for mb-md-5 py-5 wow slideInLeft">
+
+        <div class="container pt-4 pt-lg-4">
+            <div class="row pt-xl-5">
+                    <div class="for text-center">
+                        <h1 class="title-content position-relative">
+                            <span class="bg-white px-5">Pairpurth Farkları</span>
+                        </h1>
+                        <h5 class="fs-6">Yaşamınıza değer katan bir çok ayrıntı sizleri bekliyor</h5>
+                    </div>                
+            </div>
+
+            <div class="d-flex capsulcephe justify-content-evenly align-items-center flex-wrap text-center pt-5 pb-5 fw-600 fs-6">
+                <div class="icon-1 col-lg-2 col-4 ic">
+                    <img src="img/icon-1.png" alt="">
+                    <p class="icon-text">Nefes Alan <br>Dış Cephe</p>
+                               
+                </div>
+
+                <div class="icon-2 col-lg-2 col-4 ic">
+                    <img src="img/icon-2.png" alt="">
+                    <p class="icon-text">A+ Sınıf <br>Malzemeler</p>
+                </div>
+            
+                    <div class="icon-3 col-lg-2 col-4 ic">
+                        <img src="img/icon-3.png" alt="">
+                        <p class="icon-text">Su Geçirmeme <br>Güvencesi</p>
+                    </div>
+            
+                        <div class="icon-4 col-lg-2 col-4 ic">
+                            <img src="img/icon-4.png" alt="">                       
+                            <p class="icon-text">Konfor <br>Alanı</p>
+                        </div>
+
+                            <div class="icon-5 col-lg-2 col-4 ic">
+                                <img src="img/icon-5.png" alt="">
+                                <p class="icon-text">Akıllı Ev <br>Sistemleri</p>
+                            </div>
+
+            </div>
+
+            <div class="flex-row d-flex flex-wrap justify-content-evenly align-items-center wrap-content">
+
+                
+                <div class="col-lg-6 pt-5 order-lg-1 order-2">
+                    <div class="div-baslik pb-2 d-lg-block d-none">
+                        <h5 class="text-uppercase fs-5 title-mini fw-bold title-mini-changed">farkımız</h5>
+                    <h3 class="fs-2 fw-bold title-changed">Nefes Alan Dış Cephe</h3>
+                    </div>
+                    
+                    <p class="fs-6 col-lg-10 pb-3 p-changed">
+
+                        İZOCAM Marka geçirmezlik yoğunluğu yüksek taş yünü cephe mantolama ile Hammaddesi doğadan gelen taş olan taşyünü, doğal olarak sağlam ve dayanıklıdır sıcaklık ve nem değişikliklerinden etkilenmez ve boyutsal kararlılık gösterir. <br>Uzun yıllar boyunca performansında bir değişiklik olmadan yalıtım işlevini yerine getirerek ömür boyu yüksek performans sağlayan evler oluşturduk
+
+                        <br> <br>
+
+                        KOMPOZİT CEPHE ile Estetik ve pürüzsüz yapısı şık bir görünüm sağlamakla birlikte Dayanıklı Koruyucudur. Hava etkilerine dayanımı sayesinde kapladığı alanı korur. Isı ve ses iletim katsayısı düşüktür. Estetik ve sürdürülebilirliğin değerini biliyoruz.
+
+                        <br> <br>
+
+                        JOTUN MARKA dış ve iç cephe boya ve macun yapılmasında kullandık çünkü EİFFEL KULESİNİN dahi bu marka ile boyandığını bildiğimizden en iyisini hak edenlere en iyisini sunmak için yola çıktık.
+                    </p>
+                    <a href="all-project.html" class="btn-main pt-1">Tüm Projeler</a>
+                </div>
+
+                <div class="col-lg-5 pt-5 order-lg-2 order-1">
+                    <div class="div-baslik pb-2 d-lg-none d-block">
+                        <h5 class="text-uppercase fs-5 title-mini fw-bold">farkımız</h5>
+                    <h3 class="fs-2 fw-bold">Nefes Alan Dış Cephe</h3>
+                    </div>
+                    <img src="img/photovideo5.png" alt="biz-kimiz" class="img-fluid img-changed">
+                </div>
+
+            </div>
+        </div>
+    </section>
+        
+
+
+        <!-- Galery Details -->
+
+        <section class="section-galery mt-5 pt-5">
+
+            <div class="container">
+                <div class="text-center">
+                    <div class="six">
+                        <h1 class="title-content position-relative"><span class="d-inline-block bg-white px-5">Paipurt Galerisi</span></h1>
+                        <h5 class="fs-6">Hayata geçirdiğimiz projelerin ilgi çekici görselleri.</h5>          
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column justify-content-center align-items-center pt-5">
+                    <div class="div d-flex justify-content-center align-items-center flex-wrap">
+                        <a data-fancybox="gallery" href="img/v3.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/v3.jpg" alt="" width="310" height="300" class="paimg img-fluid">
+                        </a>
+                        <a data-fancybox="gallery" href="img/v7.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/v7.jpg" alt="" width="310" height="300" class="paimg img-fluid">
+                        </a>
+                        <a data-fancybox="gallery" href="img/t2.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/t2.jpg" alt="" width="310" height="300" class="paimg img-fluid ">
+                        </a>
+                        <a data-fancybox="gallery" href="img/v9.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/v9.jpg" alt="" width="310" height="300" class="paimg img-fluid ">
+                        </a>
+                        <a data-fancybox="gallery" href="img/v1.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/v1.jpg" alt="" width="310" height="300" class="paimg img-fluid ">
+                        </a>
+                        <a data-fancybox="gallery" href="img/v2.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/v2.jpg" alt="" width="310" height="300" class="paimg img-fluid ">
+                        </a>
+                        <a data-fancybox="gallery" href="img/f1.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/f1.jpg" alt="" width="310" height="300" class="paimg img-fluid ">
+                        </a>
+                        <a data-fancybox="gallery" href="img/f3.jpg" class="d-block col-lg-3 col-6">
+                            <img src="img/f3.jpg" alt="" width="310" height="300" class="paimg img-fluid ">
+                        </a>
+                        
+    
+                    </div>
+                   
+                </div>
+
+            
+            </div>
+        </section>
+
+
+
+    <!-- Brands Galery -->
+    <section class="brands-galery p-lg-5 mb-lg-5 pt-4 wow slideInRight">
+        <div class="container">
+
+        <div class="seven p-5 d-lg-block d-none">
+            <h1 class="text-center title-content position-relative"><span class="d-inline-block bg-white px-5">Çalıştığımız Markalar</span></h1>
+        </div>
+
+        <div class="div d-lg-none d-block text-center">
+            <h1 class="title-content">Çalıştığımız Markalar</h1>
+        </div>
+
+        <div class="galery-partners owl-carousel d-flex justify-content-between align-items-center p-5">
+            <div class="item">
+            <a href="#"><img src="./img/kalekilit-partners.png" alt="" class="img-fluid"></a>  
+            </div>
+            
+            <div class="item">
+                <a href="#"><img src="./img/vitra-partners.png" alt="" class="img-fluid"></a> 
+            </div>
+            
+            <div class="item">
+            <a href="#"><img src="./img/yurtbay-partners.png" alt=""class="img-fluid"></a> 
+            </div>
+            <div class="item">
+                <a href="#"><img src="./img/boardex-partners.png" alt="" class="img-fluid"></a> 
+            </div>
+            <div class="item">
+            <a href="#"><img src="./img/vitra-partners.png" alt=""class="img-fluid"></a> 
+            </div>
+        <div class="item ">
+            <a href="#"><img src="./img/yurtbay-partners.png" alt="" class="img-fluid"></a> 
+        </div>
+            
+
+
+        </div>
+
+    </div>
+    
+
+    </section>
+    
+
+
+    <section class="contact-2 bg-dark pb-5 pt-2">
+        <div class="container">
+
+            <div class="pt-5 d-flex justify-content-xl-between justify-content-center align-items-center flex-wrap">
+                <div class="text-center text-white pt-5 pt-lg-0 d-lg-block d-none">
+                    <p class="fs-08 text-footer">Paipurth sizler için hayallerinizdeki projeyi, gerçeğe dönüştürür. <br>Bizim için imkansız yoktur, hayallerinizi anlatmanız yeterli.</p>
+                    <br>
+                    <hr>
+
+                </div>
+
+                <div class="footer-text-2 text-center text-white flex-grow-1 flex-xl-grow-0 pt-3 pt-lg-0 pb-3 pb-lg-0">
+                    <h3 class="fw-bold text-white fs-05 ms-4">Projelerimiz</h3>
+                    <ul class="liler pt-2">
+                        <li class="pb-3"><a href="detail.html" class="footer-li">Karamürsel Suit Daireler</a></li>
+                        <li class="pb-3"><a href="detail2.html" class="footer-li">Karamürsel City</a></li>
+                        <li class="pb-3"><a href="detail3.html" class="footer-li">Paipurth Tek Villa</a></li>
+                        <li class="pb-3"><a href="detail4.html" class="footer-li">Paipurth Villalar</a></li>
+                        <li><a href="#" class="footer-li">İzmir Apartman</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-text-3 text-center text-white flex-grow-1 flex-xl-grow-0 pb-2">
+                    <h3 class="fw-bold text-white fs-05 mb-4">İletişim</h3>
+                    <p class="text-footer fs-07 pb-4"><a href="">Büyükdere Cd. No:62 <br>Lale İş Merkezi Kat:5<br><span>İstanbul / Şişli</span></a></p>
+                    <p class="text-white fw-bold fs-06"><a href="">(0212) 267 07 21</a></p>
+                    <p class="fs-07 text-yellow-50"><a href="#">info@paipurth.com.tr</a></p>
+                </div>
+
+
+
+                <div class="card bg-card pb-5" style="width: 22rem; height: 13rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-white pt-3">İletişime Geçmek İçin</h5>
+                        <input type="text"
+                            class="text-white form-control form-control-1 mb-2 pt-3 position-relative bg-transparent shadow-none"
+                            placeholder="Email Adresiniz">
+                        <span><a href="#"><i
+                                    class="bi bi-cursor-fill text-white position-absolute mx-4 end-0 bottom-50"></i></a></span>
+                        <span>
+                            <p class="card-subtitle mb-2 text-muted pt-3 fw-bold">
+                                <i class="bi bi-check-circle"></i>&nbsp; Okudum ve onaylıyorum.
+                            </p>
+                        </span>
+                    </div>
+                </div>  
+
+            </div>
+
+        </div>
+    </section>
+ 
+
+
+
+        
+    <!-- Contact-3 ||  Footer -->
+    <section class="footer">
+        <div class="container-fluid pt-3 pb-3">
+            <div class="d-flex justify-content-evenly align-items-center flex-wrap">
+                <div class="footer-logo">
+                      <a href="index.html"><img src="img/pairpurth.png" width="auto" height="auto" alt=""></a>
+                </div>
+                
+                <div class="div">
+
+                <p class="cp-text text-center pt-2">© Copyright 2021 by 
+                    <a href="https://paipurth.com.tr/">paipurth.com.tr</a>
+                </p>                     
+                
+                </div>
+
+                <div class="div text-white">
+                    <a href="#"><i class="bi bi-twitter mx-3 "></i></a>
+                    <a href="#"><i class="bi bi-facebook mx-3"></i></a>
+                    <a href="#"><i class="bi bi-instagram mx-3"></i></a>
+                    <a href="#"><i class="bi bi-linkedin mx-3"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="border: 0;">
+          <!-- <h5 class="modal-title fw-600" id="exampleModalLabel">İletişim Formu</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+                <form class="main_form" style="box-shadow: none;">
+                    <h3 class="ms-2 pb-4">Sizi Arayalım</h3>
+                    <div class="row">
+                       <div class="col-sm-12">
+                          <input class="contactus" placeholder="Adınız Soyadınız" type="text">
+                       </div>
+
+                       <div class="col-sm-12">
+                          <input class="contactus" placeholder="Mail Adresiniz" type="text">
+                       </div>
+
+                       <div class="col-sm-12">
+                          <input class="contactus" placeholder="Telefon" type="text">
+                       </div>
+
+                       <div class="col-sm-12">
+                          <textarea class="textarea" placeholder="Mesaj" type="text"></textarea>
+                       </div>
+
+                       <div class="col-sm-12">
+                          <a href="#" class="btn send">Gönder</a>
+                       </div>
+
+                    </div>
+                 </form>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
+
+
+
